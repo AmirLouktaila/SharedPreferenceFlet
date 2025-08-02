@@ -3,9 +3,11 @@ import json
 import os
 from .exceptions import *
 from .utils import *
-
+from cryptography.hazmat.primitives.kdf.pbkdf2 import PBKDF2HMAC
+from cryptography.hazmat.backends import default_backend
+from cryptography.hazmat.primitives import hashes
 class SharedPreferenceFlet:
-    def __init__(self, name: str = "prefs.json", password: str = "defaultPassword"):
+    def __init__(self, name: str = "prefs", password: str = "defaultPassword"):
         self.file = name
         self.lock_file = self.file + ".lock"
         self.salt_file = self.file + ".salt"
@@ -18,7 +20,7 @@ class SharedPreferenceFlet:
 
         if not os.path.exists(self.file) and not self.encrypted:
             self._write_empty_file()
-            self.encrypt_file()
+
 
         self.load()
 

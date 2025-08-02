@@ -55,10 +55,10 @@ prefs.Close()
     <tr><td><code>setInt(key, value)</code></td><td>Save an integer</td></tr>
     <tr><td><code>getInt(key)</code></td><td>Retrieve an integer</td></tr>
     <tr><td><code>setStringList(key, value)</code></td><td>Save a list</td></tr>
-    <tr><td><code>getStringLis(key)</code></td><td>Retrieve a list string</td></tr>
+    <tr><td><code>getStringList(key)</code></td><td>Retrieve a list string</td></tr>
     <tr><td><code>setList(key, value)</code></td><td>Save a a list string</td></tr>
     <tr><td><code>getList(key)</code></td><td>Retrieve a list</td></tr>
-    <tr><td><code>getDouble(key, value)</code></td><td>Save a Double/td></tr>
+    <tr><td><code>getDouble(key, value)</code></td><td>Save a Double</td></tr>
     <tr><td><code>getDouble(key)</code></td><td>Retrieve a dictionary</td></tr>
     <tr><td><code>remove()</code></td><td>Remove all saved keys</td></tr>
     <tr><td><code>Close()</code></td><td>Close the storage (when not using <code>with</code>)</td></tr>

@@ -1,10 +1,10 @@
-# If you want to use SharedPreferenceFlet for securely storing preferences,
-# you can use the following code snippet to set and get preferences.
+# # If you want to use SharedPreferenceFlet for securely storing preferences,
+# # you can use the following code snippet to set and get preferences.
 
-from ..sharedflet.core import SharedPreferenceFlet
+from sharedflet import SharedPreferenceFlet
 
 # Example 1: Using context manager (recommended)
-with SharedPreferenceFlet("myprefs", password="1234") as prefs:
+with SharedPreferenceFlet("myprefsdd") as prefs:
     prefs.setString("token", "xyz")
     print(prefs.getString("token"))
 
