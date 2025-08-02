@@ -1,8 +1,8 @@
 import datetime
 import json
 import os
-from exceptions import *
-from utils import *
+from .exceptions import *
+from .utils import *
 
 class SharedPreferenceFlet:
     def __init__(self, name: str = "prefs.json", password: str = "defaultPassword"):
